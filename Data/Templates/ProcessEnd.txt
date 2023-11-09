@@ -1,0 +1,10 @@
+<div style='font-size:11.0pt;font-family:Calibri;color:black'>
+<span>Dear User,</span><br/><br/>
+<span>Robot execution for "<ProcessName>" has completed</span><br/><br/>
+<span><ProcessCompletionMailMessage></span><br/><br/>
+<span><ProcessCompletionMailAdditionalMessage></span><br/><br/>
+<span>In case of any issue, please contact RPA Factory support at rpa.support@bayer.com</span><br/><br/>
+<span>Regards,<br/></span>
+<span> <ProcessName> Robot</span><br><br>
+<b>Note: This is a system generated mail. Please do not reply.</b>
+</div>

@@ -1,0 +1,961 @@
+﻿[
+  {
+    "RuleId": "ST-NMG-001",
+    "RuleName": "Variables Naming Convention",
+    "Parameters": [
+      {
+        "Key": "Regex",
+        "UserValue": null,
+        "DefaultValue": "^(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Process.xaml: Variable in_TransactionItem does not respect the set pattern ^(dt_)?([A-Z]|[a-z])+([0-9])*$",
+      "Tableau\\locateHyperFile.xaml: Variable in_FileName does not respect the set pattern ^(dt_)?([A-Z]|[a-z])+([0-9])*$",
+      "Tableau\\locateHyperFile.xaml: Variable in_FolderPath does not respect the set pattern ^(dt_)?([A-Z]|[a-z])+([0-9])*$"
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-008",
+    "RuleName": "Variable Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": "20",
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Variable DeletingBrowsingHistory name length should not be above 20 characters.",
+      "Main.xaml: Variable TransactionDataRowItem name length should not be above 20 characters."
+    ]
+  },
+  {
+    "RuleId": "ST-DBP-003",
+    "RuleName": "Empty Catch Block",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-002",
+    "RuleName": "Activity Name Defaults",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Framework\\CloseAllApplications.xaml: Activity Kill Multiple Processes has a default name.",
+      "Framework\\GetTransactionData.xaml: Activity Get Transaction Item has a default name.",
+      "Common\\SendReportEmail.xaml: Activity Send SMTP Mail Message has a default name.",
+      "Excel\\ExecutePlanMacro.xaml: Activity Retry Scope has a default name.",
+      "Excel\\ExecutePlanMacro.xaml: Activity Excel Application Scope has a default name.",
+      "Excel\\ExecutePlanMacro.xaml: Activity Execute Macro has a default name.",
+      "TOS\\ITSLogin.xaml: Activity Try Catch has a default name.",
+      "TOS\\ITSLogin.xaml: Activity Rethrow has a default name.",
+      "Process.xaml: Activity Try Catch has a default name.",
+      "Process.xaml: Activity Rethrow has a default name.",
+      "Process.xaml: Activity Get Transaction Item has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Assign has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Retry Scope has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Assign has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Sequence has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Throw has a default name.",
+      "TOS\\DownloadReportFile.xaml: Activity Rethrow has a default name.",
+      "Tableau\\PublishUpdateTableau.xaml: Activity Logs has a default name.",
+      "Tableau\\PublishUpdateTableau.xaml: Activity Logs has a default name.",
+      "Tableau\\PublishUpdateTableau.xaml: Activity Maximize Window has a default name.",
+      "Tableau\\PublishUpdateTableau.xaml: Activity Logs has a default name.",
+      "Tableau\\PublishUpdateTableau.xaml: Activity Kill Process has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Comment Out has a default name.",
+      "Main.xaml: Activity Add Queue Item has a default name.",
+      "Main.xaml: Activity Kill Multiple Processes has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Should Stop has a default name.",
+      "Main.xaml: Activity If has a default name.",
+      "Main.xaml: Activity Log Message has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Try Catch has a default name.",
+      "Main.xaml: Activity Invoke Workflow File has a default name.",
+      "Main.xaml: Activity Log Message has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity If has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Log Message has a default name."
+    ]
+  },
+  {
+    "RuleId": "ST-USG-005",
+    "RuleName": "Hardcoded Activity Properties",
+    "Parameters": [
+      {
+        "Key": "IncludeActivities",
+        "UserValue": null,
+        "DefaultValue": "System.Activities.Statements.StateMachine,System.Activities.Statements.State",
+        "LocalizedName": "Include Activities:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "ExcludeActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Exclude Activities:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "IncludeProperties",
+        "UserValue": null,
+        "DefaultValue": "*",
+        "LocalizedName": "Include Properties:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "ExcludeProperties",
+        "UserValue": null,
+        "DefaultValue": "Fuzzy Selector, Selector, Window selector (Application instance), Message, Attribute, StartingCell, SheetName, StatusText, Text, EndPoint, Name, WorkflowFileName, AssetName",
+        "LocalizedName": "Exclude Properties:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-REL-006",
+    "RuleName": "Infinite Loop",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-004",
+    "RuleName": "Display Name Duplication",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Framework\\GetTransactionData.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Framework\\GetTransactionData.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Framework\\GetTransactionData.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Excel\\ExecutePlanMacro.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Excel\\ExecutePlanMacro.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Excel\\ExecutePlanMacro.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Framework\\SetTransactionStatus.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\ITSLogin.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "TOS\\DownloadReportFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\PublishUpdateTableau.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\PublishUpdateTableau.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\PublishUpdateTableau.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Tableau\\PublishUpdateTableau.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Sharepoint\\UploadSharepointFile.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)"
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-005",
+    "RuleName": "Variable Overrides Variable",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-002",
+    "RuleName": "Arguments Naming Convention",
+    "Parameters": [
+      {
+        "Key": "InRegex",
+        "UserValue": "^in_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^in_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "In Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "OutRegex",
+        "UserValue": "^out_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^out_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Out Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "InOutRegex",
+        "UserValue": "^io_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^io_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "InOut Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Framework\\GetTransactionData.xaml: Argument out_TransactionItem_QueueItem does not respect the set pattern ^out_([A-Z]|[a-z])+([0-9])*$",
+      "Framework\\GetTransactionData.xaml: Argument out_TransactionItem_DataRow does not respect the set pattern ^out_([A-Z]|[a-z])+([0-9])*$"
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-011",
+    "RuleName": "Prefix Datatable Arguments",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Framework\\GetTransactionData.xaml: Argument io_TransactionData doesn't have datatable prefix."
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-012",
+    "RuleName": "Argument Default Values",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Framework\\CloseAllApplications.xaml: In argument in_Config should have default value.",
+      "Common\\OpenOutlook.xaml: In argument in_Config should have default value.",
+      "Framework\\GetTransactionData.xaml: In argument in_TransactionNumber should have default value.",
+      "Framework\\GetTransactionData.xaml: In argument in_Config should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_SmtpPort should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_SmtpServer should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_AppId should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_TenantId should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_EmailTo should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_EmailSubject should have default value.",
+      "Common\\SendReportEmail.xaml: In argument in_EmailBody should have default value.",
+      "Framework\\InitAllApplications.xaml: In argument in_Config should have default value.",
+      "Excel\\ExecutePlanMacro.xaml: In argument in_Config should have default value.",
+      "Excel\\ExecutePlanMacro.xaml: In argument in_AppId should have default value.",
+      "Excel\\ExecutePlanMacro.xaml: In argument in_TenentId should have default value.",
+      "Framework\\SetTransactionStatus.xaml: In argument in_Config should have default value.",
+      "Framework\\SetTransactionStatus.xaml: In argument in_TransactionID should have default value.",
+      "Framework\\SetTransactionStatus.xaml: In argument in_SystemException should have default value.",
+      "Framework\\SetTransactionStatus.xaml: In argument in_BusinessException should have default value.",
+      "Framework\\SetTransactionStatus.xaml: In argument in_TransactionItemDataRow should have default value.",
+      "Framework\\KillAllProcesses.xaml: In argument in_Config should have default value.",
+      "Tableau\\LocateTableau.xaml: In argument in_Config should have default value.",
+      "Tableau\\LocateTableau.xaml: In argument in_AppId should have default value.",
+      "Tableau\\LocateTableau.xaml: In argument in_TenantId should have default value.",
+      "Tableau\\LocateTableau.xaml: In argument in_File should have default value.",
+      "Framework\\TakeScreenshot.xaml: In argument in_Folder should have default value.",
+      "Tableau\\Tableau_ConnectToServidor.xaml: In argument in_Config should have default value.",
+      "Framework\\RetryCurrentTransaction.xaml: In argument in_Config should have default value.",
+      "Framework\\RetryCurrentTransaction.xaml: In argument in_SystemException should have default value.",
+      "Framework\\RetryCurrentTransaction.xaml: In argument in_QueueRetry should have default value.",
+      "TOS\\ITSLogin.xaml: In argument in_Config should have default value.",
+      "Process.xaml: In argument in_Config should have default value.",
+      "Process.xaml: In argument in_TransactionQueueItem should have default value.",
+      "Process.xaml: In argument in_TransactionDataRowItem should have default value.",
+      "Process.xaml: In argument in_AppId should have default value.",
+      "Process.xaml: In argument in_TenantId should have default value.",
+      "Sharepoint\\DownloadSharepointFile.xaml: In argument in_Config should have default value.",
+      "Sharepoint\\DownloadSharepointFile.xaml: In argument in_AppId should have default value.",
+      "Sharepoint\\DownloadSharepointFile.xaml: In argument in_TenantId should have default value.",
+      "Sharepoint\\DownloadSharepointFile.xaml: In argument in_FileName should have default value.",
+      "Sharepoint\\DownloadSharepointFile.xaml: In argument in_FolderPath should have default value.",
+      "TOS\\DownloadReportFile.xaml: In argument in_Config should have default value.",
+      "Tableau\\PublishUpdateTableau.xaml: In argument in_Config should have default value.",
+      "Main.xaml: In argument in_OrchestratorQueueName should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_Config should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_CompareFileName should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_ReplaceFileName should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_AppId should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_TenantId should have default value.",
+      "Sharepoint\\UploadSharepointFile.xaml: In argument in_FileName should have default value.",
+      "Tableau\\locateHyperFile.xaml: In argument in_Config should have default value.",
+      "Tableau\\locateHyperFile.xaml: In argument in_AppId should have default value.",
+      "Tableau\\locateHyperFile.xaml: In argument in_TenantId should have default value.",
+      "Tableau\\locateHyperFile.xaml: In argument in_Tile should have default value."
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-006",
+    "RuleName": "Variable Overrides Argument",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-002",
+    "RuleName": "High Arguments Count",
+    "Parameters": [
+      {
+        "Key": "ArgumentsCount",
+        "UserValue": null,
+        "DefaultValue": "20",
+        "LocalizedName": "Arguments Count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-007",
+    "RuleName": "Multiple Flowchart Layers",
+    "Parameters": [
+      {
+        "Key": "LayersCount",
+        "UserValue": "3",
+        "DefaultValue": "2",
+        "LocalizedName": "Layer count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Tableau\\Tableau_ConnectToServidor.xaml: Flowchart Do - Connect to Tableau is used in a secondary layer in Tableau_ConnectToServidor."
+    ]
+  },
+  {
+    "RuleId": "ST-MRD-007",
+    "RuleName": "Nested If Clauses",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "3",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-004",
+    "RuleName": "Unreachable Activities",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-008",
+    "RuleName": "Empty Sequence",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-005",
+    "RuleName": "Redundant Sequences",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-011",
+    "RuleName": "Write Line Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-009",
+    "RuleName": "Deeply Nested Activities",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": "6",
+        "DefaultValue": "7",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Excel\\ExecutePlanMacro.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Framework\\InitAllSettings.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Tableau\\Tableau_ConnectToServidor.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\ITSLogin.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "TOS\\DownloadReportFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Tableau\\PublishUpdateTableau.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Tableau\\PublishUpdateTableau.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Tableau\\PublishUpdateTableau.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Tableau\\PublishUpdateTableau.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Sharepoint\\UploadSharepointFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Sharepoint\\UploadSharepointFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Sharepoint\\UploadSharepointFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Sharepoint\\UploadSharepointFile.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)"
+    ]
+  },
+  {
+    "RuleId": "ST-USG-009",
+    "RuleName": "Unused Variables",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Framework\\GetTransactionData.xaml: Variable CfgIDColumnName is not used.",
+      "Excel\\ExecutePlanMacro.xaml: Variable SharepointUrl is not used.",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Variable elementsignin is not used.",
+      "Tableau\\PublishUpdateTableau.xaml: Variable strSignExist is not used."
+    ]
+  },
+  {
+    "RuleId": "ST-PRR-004",
+    "RuleName": "Hardcoded Delay Activity",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserHistoryAndCookies.xaml: Delay activity used in workflow ClearBrowserHistoryAndCookies at Delay - After clear data.",
+      "TOS\\ITSLogin.xaml: Delay activity used in workflow ITSLogin at Delay - Before click on internal.",
+      "TOS\\DownloadReportFile.xaml: Delay activity used in workflow DownloadReportFile at Delay - Before Download.",
+      "TOS\\DownloadReportFile.xaml: Delay activity used in workflow DownloadReportFile at Delay - After error pop up.",
+      "TOS\\DownloadReportFile.xaml: Delay activity used in workflow DownloadReportFile at Delay - Before download.",
+      "TOS\\DownloadReportFile.xaml: Delay activity used in workflow DownloadReportFile at Delay - After download."
+    ]
+  },
+  {
+    "RuleId": "ST-SEC-009",
+    "RuleName": "SecureString Misusage",
+    "Parameters": [
+      {
+        "Key": "Excluded",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Excluded Activities:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-010",
+    "RuleName": "Unused Dependencies",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-005",
+    "RuleName": "Check Project.json Exists",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-006",
+    "RuleName": "Main Workflow Exists",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-016",
+    "RuleName": "Argument Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": null,
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-023",
+    "RuleName": "Empty Workflow",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-007",
+    "RuleName": "SecureString Argument Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-001",
+    "RuleName": "Simulate Click",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-002",
+    "RuleName": "Simulate Type",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: UI Automation activity Executing command to clear history used without SimulateType or SendWindowMessage.",
+      "Common\\ClearBrowserAndTempFolder.xaml: UI Automation activity Command for to remove temporary files used without SimulateType or SendWindowMessage.",
+      "Common\\ClearBrowserAndTempFolder.xaml: UI Automation activity Execute exit command used without SimulateType or SendWindowMessage."
+    ]
+  },
+  {
+    "RuleId": "UI-PRR-003",
+    "RuleName": "Open Application Misuse",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-004",
+    "RuleName": "Hardcoded Delays",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Hardcoded delays used in activity Execute exit command",
+      "Common\\ClearBrowserHistoryAndCookies.xaml: Hardcoded delays used in activity Click 'push button  Clear data'",
+      "TOS\\ITSLogin.xaml: Hardcoded delays used in activity Click Internal",
+      "Tableau\\PublishUpdateTableau.xaml: Hardcoded delays used in activity Click 'Yes '"
+    ]
+  },
+  {
+    "RuleId": "UI-DBP-013",
+    "RuleName": "Excel Automation Misuse",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-021",
+    "RuleName": "Hardcoded Timeout",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Timeout properties should not contain hardcoded values. Use defaults, settings or dynamic values. [Learn more.](https://docs.uipath.com/activities/lang-en/docs/st-dbp-021)",
+      "Common\\ClearBrowserAndTempFolder.xaml: Timeout properties should not contain hardcoded values. Use defaults, settings or dynamic values. [Learn more.](https://docs.uipath.com/activities/lang-en/docs/st-dbp-021)",
+      "Tableau\\PublishUpdateTableau.xaml: Timeout properties should not contain hardcoded values. Use defaults, settings or dynamic values. [Learn more.](https://docs.uipath.com/activities/lang-en/docs/st-dbp-021)"
+    ]
+  },
+  {
+    "RuleId": "UI-REL-001",
+    "RuleName": "Large idx in Selectors",
+    "Parameters": [
+      {
+        "Key": "idxValue",
+        "UserValue": null,
+        "DefaultValue": "2",
+        "LocalizedName": "IdxValue (Default = 2):",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "TOS\\DownloadReportFile.xaml: Selector from activity Element Exists 'pane' contains large IDX number. Threshold is 2",
+      "Tableau\\PublishUpdateTableau.xaml: Selector from activity Click 'Save' contains large IDX number. Threshold is 2"
+    ]
+  },
+  {
+    "RuleId": "UI-SEC-004",
+    "RuleName": "Selector Email Data",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-USG-011",
+    "RuleName": "Non Allowed Attributes",
+    "Parameters": [
+      {
+        "Key": "nonAllowedAttributes",
+        "UserValue": "idx,css, isLeaf",
+        "DefaultValue": "idx",
+        "LocalizedName": "Non Allowed Attributes (Default = idx):",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "TOS\\ITSLogin.xaml: Selector contains non allowed attribute idx in activity Element Exists 'SPAN'",
+      "TOS\\ITSLogin.xaml: Selector contains non allowed attribute idx in activity Click 'PATH'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "TOS\\DownloadReportFile.xaml: Selector contains non allowed attribute idx in activity Element Exists 'pane'",
+      "Tableau\\PublishUpdateTableau.xaml: Selector contains non allowed attribute idx in activity Click 'Save'"
+    ]
+  },
+  {
+    "RuleId": "UI-DBP-006",
+    "RuleName": "Container Usage",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Top level selector used outside scoped containers in activities executing command in command prompt Click on Ok.",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Top level selector used outside scoped containers in activities Element Exists Sign In Send Hotkey 'BODY'.",
+      "TOS\\DownloadReportFile.xaml: Top level selector used outside scoped containers in activities Click 'push button  OK' Element Exists 'pane'.",
+      "TOS\\DownloadReportFile.xaml: Top level selector used outside scoped containers in activities Click 'push button  OK' Element Exists 'pane'.",
+      "Tableau\\PublishUpdateTableau.xaml: Top level selector used outside scoped containers in activities Element Exists 'progress bar' Click 'push button  Close Enter'.",
+      "Tableau\\locateHyperFile.xaml: Top level selector used outside scoped containers in activities Type the file location Click open."
+    ]
+  },
+  {
+    "RuleId": "UI-ANA-017",
+    "RuleName": "ContinueOnError True",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "ContinueOnError = True detected."
+    ]
+  },
+  {
+    "RuleId": "UI-ANA-016",
+    "RuleName": "Pull Open Browser URL",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Browser URLs detected."
+    ]
+  },
+  {
+    "RuleId": "UI-ANA-018",
+    "RuleName": "List OCR/Image Activities",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Occurrences of OCR or Find Image activities:\r\n* TakeScreenshot\r\n** Save screenshot\r\n* Tableau_ConnectToServidor\r\n** Find Image Sign In\r\n [Learn more.](https://docs.uipath.com/activities/lang-en/docs/ui-ana-018)"
+    ]
+  },
+  {
+    "RuleId": "UI-SEC-010",
+    "RuleName": "App/Url Restrictions",
+    "Parameters": [
+      {
+        "Key": "blacklistApps",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Applications:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "whitelistApps",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Applications:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "blacklistUrls",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Urls:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "whitelistUrls",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Urls:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-009",
+    "RuleName": "Prefix DataTable Variables",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Excel\\ExecutePlanMacro.xaml: Variable FilterData doesn't have DataTable prefix.",
+      "Excel\\ExecutePlanMacro.xaml: Variable Data doesn't have DataTable prefix.",
+      "Framework\\InitAllSettings.xaml: Variable SettingsAndConstants doesn't have DataTable prefix.",
+      "Framework\\InitAllSettings.xaml: Variable Assets doesn't have DataTable prefix.",
+      "Main.xaml: Variable TransactionData doesn't have DataTable prefix."
+    ]
+  },
+  {
+    "RuleId": "ST-MRD-017",
+    "RuleName": "Incomplete IF",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "MA-DBP-028",
+    "RuleName": "Empty Use Outlook Account activity",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "XL-DBP-027",
+    "RuleName": "Empty Use Excel File Activity",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-025",
+    "RuleName": "Variables Serialization Prerequisite",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-028",
+    "RuleName": "Arguments Serialization Prerequisite",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-024",
+    "RuleName": "Persistence Activities Check",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-026",
+    "RuleName": "Delay Activity Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-026",
+    "RuleName": "Activity Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Prohibited Activities",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "AllowedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Allowed Activities",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-028",
+    "RuleName": "Restrict Invoke File Templates",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-008",
+    "RuleName": "SecureString Variable Usage",
+    "Parameters": [
+      {
+        "Key": "VariableDepthUsage",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Variable depth usage:",
+        "ConstraintRegex": "(1|2|3)"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-020",
+    "RuleName": "Minimum Log Messages",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserHistoryAndCookies.xaml: Log Message not used in workflow ClearBrowserHistoryAndCookies.",
+      "Common\\OpenOutlook.xaml: Log Message not used in workflow OpenOutlook.",
+      "Common\\SendReportEmail.xaml: Log Message not used in workflow SendReportEmail.",
+      "Excel\\ExecutePlanMacro.xaml: Log Message not used in workflow ExecutePlanMacro.",
+      "Framework\\KillAllProcesses.xaml: Log Message not used in workflow KillAllProcesses.",
+      "Process.xaml: Log Message not used in workflow Process.",
+      "Sharepoint\\DownloadSharepointFile.xaml: Log Message not used in workflow DownloadSharepointFile.",
+      "Tableau\\PublishUpdateTableau.xaml: Log Message not used in workflow PublishUpdateTableau."
+    ]
+  },
+  {
+    "RuleId": "ST-DBP-027",
+    "RuleName": "Persistence Best Practice",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-014",
+    "RuleName": "Package Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Packages",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "AllowedPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Packages",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-027",
+    "RuleName": "Required Packages",
+    "Parameters": [
+      {
+        "Key": "RequiredPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Required Package References",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-032",
+    "RuleName": "Required Tags",
+    "Parameters": [
+      {
+        "Key": "RequiredTags",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Required Tags",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-034",
+    "RuleName": "Automation Hub URL",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Your organization requires your project to have an Automation Hub URL defined."
+    ]
+  },
+  {
+    "RuleId": "SY-USG-013",
+    "RuleName": "Private File Invoke",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "SY-USG-014",
+    "RuleName": "Incorrect Execution Template Placeholders",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-009",
+    "RuleName": "File Activities Stats",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Common\\ClearBrowserAndTempFolder.xaml: Activities: 23, Ifs: 1",
+      "Framework\\CloseAllApplications.xaml: Activities: 3",
+      "Common\\ClearBrowserHistoryAndCookies.xaml: Activities: 8",
+      "Common\\OpenOutlook.xaml: Activities: 6, Ifs: 1",
+      "Framework\\GetTransactionData.xaml: Activities: 13, Ifs: 2, Switches: 2",
+      "Common\\SendReportEmail.xaml: Activities: 6",
+      "Framework\\InitAllApplications.xaml: Activities: 4",
+      "Excel\\ExecutePlanMacro.xaml: Activities: 21, Ifs: 1",
+      "Framework\\InitAllSettings.xaml: Activities: 19, Ifs: 2",
+      "Framework\\SetTransactionStatus.xaml: Activities: 38, Ifs: 3",
+      "Framework\\KillAllProcesses.xaml: Activities: 2",
+      "Tableau\\LocateTableau.xaml: Activities: 19, Ifs: 2",
+      "Framework\\TakeScreenshot.xaml: Activities: 9, Ifs: 2",
+      "Tableau\\Tableau_ConnectToServidor.xaml: Activities: 30",
+      "Framework\\RetryCurrentTransaction.xaml: Activities: 10",
+      "TOS\\ITSLogin.xaml: Activities: 33, Ifs: 2",
+      "Process.xaml: Activities: 11",
+      "Sharepoint\\DownloadSharepointFile.xaml: Activities: 10",
+      "TOS\\DownloadReportFile.xaml: Activities: 85, Ifs: 9",
+      "Tableau\\PublishUpdateTableau.xaml: Activities: 48, Ifs: 2",
+      "Main.xaml: Activities: 82, Ifs: 7",
+      "Sharepoint\\UploadSharepointFile.xaml: Activities: 17, Ifs: 1",
+      "Tableau\\locateHyperFile.xaml: Activities: 12, Ifs: 1"
+    ]
+  },
+  {
+    "RuleId": "ST-ANA-003",
+    "RuleName": "Project Workflow Count",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "project.json: Project workflow count:\r\n* Totals: 1 Folders and 23 workflows\r\n"
+    ]
+  }
+]

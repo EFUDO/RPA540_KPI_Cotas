@@ -1,0 +1,723 @@
+﻿[
+  {
+    "RuleId": "ST-NMG-001",
+    "RuleName": "Variables Naming Convention",
+    "Parameters": [
+      {
+        "Key": "Regex",
+        "UserValue": null,
+        "DefaultValue": "^(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-008",
+    "RuleName": "Variable Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": "20",
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Main.xaml: Variable TransactionDataRowItem name length should not be above 20 characters."
+    ]
+  },
+  {
+    "RuleId": "ST-DBP-003",
+    "RuleName": "Empty Catch Block",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-002",
+    "RuleName": "Activity Name Defaults",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Comment Out has a default name.",
+      "Main.xaml: Activity Add Queue Item has a default name.",
+      "Main.xaml: Activity Kill Multiple Processes has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Logs has a default name.",
+      "Main.xaml: Activity Should Stop has a default name.",
+      "Main.xaml: Activity If has a default name.",
+      "Main.xaml: Activity Log Message has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Try Catch has a default name.",
+      "Main.xaml: Activity Invoke Workflow File has a default name.",
+      "Main.xaml: Activity Log Message has a default name.",
+      "Main.xaml: Activity Comment has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity If has a default name.",
+      "Main.xaml: Activity Sequence has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Assign has a default name.",
+      "Main.xaml: Activity Log Message has a default name."
+    ]
+  },
+  {
+    "RuleId": "ST-USG-005",
+    "RuleName": "Hardcoded Activity Properties",
+    "Parameters": [
+      {
+        "Key": "IncludeActivities",
+        "UserValue": null,
+        "DefaultValue": "System.Activities.Statements.StateMachine,System.Activities.Statements.State",
+        "LocalizedName": "Include Activities:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "ExcludeActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Exclude Activities:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "IncludeProperties",
+        "UserValue": null,
+        "DefaultValue": "*",
+        "LocalizedName": "Include Properties:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "ExcludeProperties",
+        "UserValue": null,
+        "DefaultValue": "Fuzzy Selector, Selector, Window selector (Application instance), Message, Attribute, StartingCell, SheetName, StatusText, Text, EndPoint, Name, WorkflowFileName, AssetName",
+        "LocalizedName": "Exclude Properties:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-REL-006",
+    "RuleName": "Infinite Loop",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-004",
+    "RuleName": "Display Name Duplication",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)",
+      "Main.xaml: Names of activities should give a clear indication of how they are being used. Default names are usually too generic. Please avoid duplicate names. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-nmg-004)"
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-005",
+    "RuleName": "Variable Overrides Variable",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-002",
+    "RuleName": "Arguments Naming Convention",
+    "Parameters": [
+      {
+        "Key": "InRegex",
+        "UserValue": "^in_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^in_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "In Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "OutRegex",
+        "UserValue": "^out_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^out_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "Out Regex:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "InOutRegex",
+        "UserValue": "^io_([A-Z]|[a-z])+([0-9])*$",
+        "DefaultValue": "^io_(dt_)?([A-Z]|[a-z])+([0-9])*$",
+        "LocalizedName": "InOut Regex:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-011",
+    "RuleName": "Prefix Datatable Arguments",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-012",
+    "RuleName": "Argument Default Values",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": [
+      "Main.xaml: In argument in_OrchestratorQueueName should have default value."
+    ]
+  },
+  {
+    "RuleId": "ST-NMG-006",
+    "RuleName": "Variable Overrides Argument",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-002",
+    "RuleName": "High Arguments Count",
+    "Parameters": [
+      {
+        "Key": "ArgumentsCount",
+        "UserValue": null,
+        "DefaultValue": "20",
+        "LocalizedName": "Arguments Count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-007",
+    "RuleName": "Multiple Flowchart Layers",
+    "Parameters": [
+      {
+        "Key": "LayersCount",
+        "UserValue": "3",
+        "DefaultValue": "2",
+        "LocalizedName": "Layer count:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-007",
+    "RuleName": "Nested If Clauses",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": null,
+        "DefaultValue": "3",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-004",
+    "RuleName": "Unreachable Activities",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-008",
+    "RuleName": "Empty Sequence",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-005",
+    "RuleName": "Redundant Sequences",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-011",
+    "RuleName": "Write Line Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-MRD-009",
+    "RuleName": "Deeply Nested Activities",
+    "Parameters": [
+      {
+        "Key": "Threshold",
+        "UserValue": "6",
+        "DefaultValue": "7",
+        "LocalizedName": "Threshold: ",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)",
+      "Main.xaml: It is usually more difficult to see and understand workflows that have too many deeply nested activities, so it is recommended to avoid deeply nested structures. Instead, it might be better to separate the workflow into smaller ones and use the Invoke Workflow File activity to call them. Consider dividing the workflow into smaller components to avoid deeply nested structures. [Learn more.](https://docs.uipath.com/studio/lang-en/v2022.10/docs/st-mrd-009)"
+    ]
+  },
+  {
+    "RuleId": "ST-USG-009",
+    "RuleName": "Unused Variables",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-PRR-004",
+    "RuleName": "Hardcoded Delay Activity",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-009",
+    "RuleName": "SecureString Misusage",
+    "Parameters": [
+      {
+        "Key": "Excluded",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Excluded Activities:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-010",
+    "RuleName": "Unused Dependencies",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-005",
+    "RuleName": "Check Project.json Exists",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-006",
+    "RuleName": "Main Workflow Exists",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-016",
+    "RuleName": "Argument Length Exceeded",
+    "Parameters": [
+      {
+        "Key": "Length",
+        "UserValue": null,
+        "DefaultValue": "30",
+        "LocalizedName": "Length:",
+        "ConstraintRegex": "[+]?\\d+"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-023",
+    "RuleName": "Empty Workflow",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-007",
+    "RuleName": "SecureString Argument Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-001",
+    "RuleName": "Simulate Click",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-002",
+    "RuleName": "Simulate Type",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-003",
+    "RuleName": "Open Application Misuse",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-PRR-004",
+    "RuleName": "Hardcoded Delays",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-DBP-013",
+    "RuleName": "Excel Automation Misuse",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-021",
+    "RuleName": "Hardcoded Timeout",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-REL-001",
+    "RuleName": "Large idx in Selectors",
+    "Parameters": [
+      {
+        "Key": "idxValue",
+        "UserValue": null,
+        "DefaultValue": "2",
+        "LocalizedName": "IdxValue (Default = 2):",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-SEC-004",
+    "RuleName": "Selector Email Data",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-USG-011",
+    "RuleName": "Non Allowed Attributes",
+    "Parameters": [
+      {
+        "Key": "nonAllowedAttributes",
+        "UserValue": "idx,css, isLeaf",
+        "DefaultValue": "idx",
+        "LocalizedName": "Non Allowed Attributes (Default = idx):",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-DBP-006",
+    "RuleName": "Container Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-ANA-017",
+    "RuleName": "ContinueOnError True",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-ANA-016",
+    "RuleName": "Pull Open Browser URL",
+    "Parameters": [],
+    "Severity": "Error",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-ANA-018",
+    "RuleName": "List OCR/Image Activities",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "UI-SEC-010",
+    "RuleName": "App/Url Restrictions",
+    "Parameters": [
+      {
+        "Key": "blacklistApps",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Applications:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "whitelistApps",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Applications:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "blacklistUrls",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Urls:",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "whitelistUrls",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Urls:",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-NMG-009",
+    "RuleName": "Prefix DataTable Variables",
+    "Parameters": [],
+    "Severity": "Warning",
+    "ErrorsDescription": [
+      "Main.xaml: Variable TransactionData doesn't have DataTable prefix."
+    ]
+  },
+  {
+    "RuleId": "ST-MRD-017",
+    "RuleName": "Incomplete IF",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "MA-DBP-028",
+    "RuleName": "Empty Use Outlook Account activity",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "XL-DBP-027",
+    "RuleName": "Empty Use Excel File Activity",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-025",
+    "RuleName": "Variables Serialization Prerequisite",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-028",
+    "RuleName": "Arguments Serialization Prerequisite",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-024",
+    "RuleName": "Persistence Activities Check",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-026",
+    "RuleName": "Delay Activity Usage",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-026",
+    "RuleName": "Activity Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Prohibited Activities",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "AllowedActivities",
+        "UserValue": null,
+        "DefaultValue": "",
+        "LocalizedName": "Allowed Activities",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-028",
+    "RuleName": "Restrict Invoke File Templates",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-SEC-008",
+    "RuleName": "SecureString Variable Usage",
+    "Parameters": [
+      {
+        "Key": "VariableDepthUsage",
+        "UserValue": null,
+        "DefaultValue": "1",
+        "LocalizedName": "Variable depth usage:",
+        "ConstraintRegex": "(1|2|3)"
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-020",
+    "RuleName": "Minimum Log Messages",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-DBP-027",
+    "RuleName": "Persistence Best Practice",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-014",
+    "RuleName": "Package Restrictions",
+    "Parameters": [
+      {
+        "Key": "ProhibitedPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Prohibited Packages",
+        "ConstraintRegex": null
+      },
+      {
+        "Key": "AllowedPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Allowed Packages",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-027",
+    "RuleName": "Required Packages",
+    "Parameters": [
+      {
+        "Key": "RequiredPackages",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Required Package References",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-032",
+    "RuleName": "Required Tags",
+    "Parameters": [
+      {
+        "Key": "RequiredTags",
+        "UserValue": null,
+        "DefaultValue": null,
+        "LocalizedName": "Required Tags",
+        "ConstraintRegex": null
+      }
+    ],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-USG-034",
+    "RuleName": "Automation Hub URL",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "SY-USG-013",
+    "RuleName": "Private File Invoke",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "SY-USG-014",
+    "RuleName": "Incorrect Execution Template Placeholders",
+    "Parameters": [],
+    "Severity": "",
+    "ErrorsDescription": []
+  },
+  {
+    "RuleId": "ST-ANA-009",
+    "RuleName": "File Activities Stats",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": [
+      "Main.xaml: Activities: 82, Ifs: 7"
+    ]
+  },
+  {
+    "RuleId": "ST-ANA-003",
+    "RuleName": "Project Workflow Count",
+    "Parameters": [],
+    "Severity": "Info",
+    "ErrorsDescription": []
+  }
+]

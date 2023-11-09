@@ -1,0 +1,10 @@
+<div style='font-size:11.0pt;font-family:Calibri;color:black'>
+<span>Dear User,</span><br/><br/>
+<span>There was an error during robot execution, please find error details below.</span><br/><br/>
+<span><SystemErrorEmailMessage></span><br/><br/>
+<span><SystemErrorEmailAdditionalMessage></span><br/><br/>
+<span>In case of any issue, please contact RPA Factory support at rpa.support@bayer.com</span><br/><br/>
+<span>Regards,</span><br/>
+<span><ProcessName> Robot</span><br/><br/>
+<b>Note: This is a system generated mail. Please do not reply.</b>
+</div>
